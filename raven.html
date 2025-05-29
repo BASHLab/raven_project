@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="">
+  <meta property="og:title" content="QUADS"/>
+  <meta property="og:description" content="QUADS: QUAntized Distillation Framework for Efficient Speech Language Understanding"/>
+  <meta property="og:url" content=""/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" /> -->
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>RAVEN</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">RAVEN: Query-Guided Representation Alignment for Question
+Answering over Audio, Video, Embedded Sensors, and Natural Language</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://users.wpi.edu/~sbiswas/" target="_blank">Subrata Biswas</a>,</span>
+                <span class="author-block">
+                  <a href="https://users.wpi.edu/~mkhan/" target="_blank">Mohammad Nur Hossain Khan</a>,</span>
+                  <span class="author-block">
+                    <a href="https://users.wpi.edu/~bislam/" target="_blank">Bashima Islam</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">BASH Lab, Worcester Polytechnic Institute</span><br>
+                    <!-- <span class="author-block" style="color: red">INTERSPEECH, 2025</span> -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="./index.html" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                          <span>Paper</span>
+                        </a>
+                      </span>
+
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2505.17114" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                          <span>ArXiv</span>
+                        </a>
+                      </span>
+
+                  <!-- Github link -->
+                    <span class="link-block">
+                        <a href="https://github.com/BASHLab/RAVEN" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Code</span>
+                        </a>
+                        </span>
+                        </a>
+                    </span>
+                        <span class="link-block">
+                        <a href="./index.html" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon" style="vertical-align: middle; font-size: 20px;">🤗</span>
+                        <span>Dataset <span style="color: yellowgreen">(Coming Soon!)</span></span>
+                        </a>
+                      </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+                Multimodal question answering (QA) often
+                requires identifying which video, audio, or
+                sensor tokens are relevant to the question.
+                Yet modality disagreements are common: off-
+                camera speech, background noise, or motion
+                outside the field of view often mislead fusion
+                models that weight all streams equally. We
+                present RAVEN, a unified QA architecture
+                whose core is QuART, a query-conditioned
+                cross-modal gating module that assigns scalar
+                relevance scores to each token across modal-
+                ities, enabling the model to amplify informa-
+                tive signals and suppress distractors before fu-
+                sion. RAVEN is trained through a three-
+                stage pipeline comprising unimodal pretrain-
+                ing, query-aligned fusion, and disagreement-
+                oriented fine-tuning – each stage targeting a
+                distinct challenge in multi-modal reasoning:
+                representation quality, cross-modal relevance,
+                and robustness to modality mismatch. To sup-
+                port training and evaluation, we release AVS-
+                QA, a dataset of 300K synchronized Audio–
+                Video-Sensor streams paired with automati-
+                cally generated question-answer pairs. Ex-
+                perimental results on seven multi-modal QA
+                benchmarks – including egocentric and exo-
+                centric tasks – show that RAVEN achieves
+                up to 14.5% and 8.0% gains in accuracy com-
+                pared to state-of-the-art multi-modal large lan-
+                guage models, respectively. Incorporating sen-
+                sor data provides an additional 16.4% boost,
+                and the model remains robust under modality
+                corruption, outperforming SOTA baselines by
+                50.23%.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Architecture</h2>
+      <img src="./static/images/raven/raven_architecture.png">
+      <div class="content has-text-justified">
+        Overview of <strong>RAVEN</strong>. Each modality (video, audio, sensor) is encoded using pretrained encoders and
+        projected into a shared space. The <strong>QuART</strong> module performs query-conditioned token relevance scoring to align
+        informative tokens across modalities. The figure also highlights the three-stage training pipeline for alignment-
+        aware multi-modal reasoning.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Quantitative Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img class="equal-height-img" src="static/images/raven/main_result_ego.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Comparison of RAVEN and prior MLLMs on exocentric open-ended video QA (MSVD-QA, MSRVTT-
+            QA, ActivityNet-QA) and audio-visual QA (AVSD, MUSIC-QA) benchmarks. Best and second-best scores are in
+            bold and underline. ∗ indicates scores reproduced by us.
+          </h2>
+        </div>
+
+        <div class="item">
+          <img class="equal-height-img" src="static/images/raven/main_result_exo.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Comparison of RAVEN with MLLMs on the EgoThink (Reasoning) and AVS-QA benchmarks. RAVEN
+            outperforms across metrics and excels in reasoning. Bold and underline indicate the best and second-best scores.
+          </h2>
+        </div>
+
+        <div class="item">
+          <img class="equal-height-img" src="static/images/raven/result_avs.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            AVS-QA results comparing RAVEN with SOTA models using different modality combinations.
+          </h2>
+        </div>
+
+        <div class="item">
+          <img class="equal-height-img" src="static/images/raven/mismatch.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Comparison under cross-modal mismatch scenarios. RAVEN with Stage III fine-tuning consistently outperforms baseline methods across all evaluation metrics and benchmarks, demonstrating superior robustness to modality perturbations.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Qualitative Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <div style="text-align: center;">
+            <img src="static/images/raven/qual1.png" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+            Example illustrating the value of sensor input for activity disambiguation. Given the question Was
+            the user actively cooking or stirring something in the pot on the stove?, the Audio+Video model observes a
+            cooking scene but cannot confirm active engagement due to the absence of motion cues. In contrast, the Au-
+            dio+Video+Sensor model leverages IMU data to detect a lack of body movement and integrates audio signals to
+            confirm no stirring, allowing it to infer that the user is not actively cooking.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <div style="text-align: center;">
+            <img src="static/images/raven/qual2.png" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          Example illustrating subtle activity disambiguation using multimodal reasoning. Given the question
+        What activity is the person likely engaged in?, the Audio+Video model identifies dishwashing activity based on
+        sink visibility and audio cues such as water flow. The Audio+Video+Sensor model enhances this understanding
+        by incorporating IMU data, which reveals low hand and body movement. This confirms a controlled, repetitive
+        action consistent with small-scale washing (e.g., lathering a ladle), demonstrating the added value of sensor input
+        for refining temporal and motion-level interpretations.
+        </h2>
+      </div>
+      <div class="item">
+        <div style="text-align: center;">
+            <img src="static/images/raven/qual3.png" alt="MY ALT TEXT"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+        Example demonstrating the added value of sensor data in identifying subtle concurrent actions. Given
+        the question Is the person engaged in any other activities other than washing hands?, the Audio+Video model
+        detects only hand presence and water sounds, concluding that no other activities are evident. In contrast, the Au-
+        dio+Video+Sensor model identifies a sudden IMU spike, indicating arm movement associated with reaching
+        for soap–capturing a secondary action that is visually and acoustically ambiguous.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+        <div style="text-align: center;">
+            <img src="static/images/raven/qual4.png" alt="MY ALT TEXT"/>
+        </div>
+      <h2 class="subtitle has-text-centered">
+        Example showcasing multimodal reasoning for fine-grained activity understanding. Given the question
+        What is the person doing with his bicycle?, the Audio+Video model identifies that the person is not riding the
+        bicycle and is likely talking nearby. In contrast, the Audio+Video+Sensor model captures continuous IMU
+        fluctuations, suggesting active engagement, such as adjusting the bikes tire pressure, demonstrating the added
+        interpretive power of sensor input.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{biswas2025raven,
+        title={RAVEN: Query-Guided Representation Alignment for Question Answering over Audio, Video, Embedded Sensors, and Natural Language},
+        author={Biswas, Subrata and Khan, Mohammad Nur Hossain and Islam, Bashima},
+        journal={arXiv preprint arXiv:2505.17114},
+        year={2025}
+        }
+      </code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
